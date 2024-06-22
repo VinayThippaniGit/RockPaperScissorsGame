@@ -1,4 +1,5 @@
 let computerMove = '';
+let wins=0,losses=0,ties=0;
         let result = '';
         function game(playerMove) {
             let randomNumber = Math.random();
@@ -12,12 +13,15 @@ let computerMove = '';
 
             if (playerMove === computerMove) {
                 result = 'Tie';
+                ties+=1;
             } else if ((playerMove === 'rock' && computerMove === 'scissors') ||
                 (playerMove === 'paper' && computerMove === 'rock') ||
                 (playerMove === 'scissors' && computerMove === 'paper')) {
                 result = 'You Win';
+                wins+=1;
             } else {
                 result = 'You loose';
+                losses+=1;
             }
             document.getElementById('result').innerHTML = `<div class="computer">Computers Move : ${computerMove} </div> <div class='your'>Your's Move : ${playerMove} `;
             document.getElementById('finalResult').innerHTML = result;
@@ -31,4 +35,5 @@ let computerMove = '';
                 document.getElementById('finalResult').style.color = 'white';
                 document.getElementById('finalResult').style.backgroundColor='Orange';
             }
+            document.getElementById('data').innerHTML=`Wins : ${wins} , Looses : ${losses} , Ties : ${ties} <br> Game Played : ${wins+losses+ties} times`
         }
