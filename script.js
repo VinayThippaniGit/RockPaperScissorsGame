@@ -35,5 +35,5 @@ let wins=0,losses=0,ties=0;
                 document.getElementById('finalResult').style.color = 'white';
                 document.getElementById('finalResult').style.backgroundColor='Orange';
             }
-            document.getElementById('data').innerHTML=`Wins : ${wins} , Looses : ${losses} , Ties : ${ties} <br> Game Played : ${wins+losses+ties} times`
+            document.getElementById('data').innerHTML=`Wins : ${wins} , Looses : ${losses} , Ties : ${ties} <br>No of Games Played : ${wins+losses+ties} times`
         }
