@@ -19,6 +19,12 @@ img {
     border-radius: 50%;
     cursor: pointer;
 }
+img:hover{
+    margin: 20px;
+    width: 102px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 #result {
     color: rgb(191, 51, 20);
