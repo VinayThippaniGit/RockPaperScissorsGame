@@ -21,7 +21,7 @@ img {
 }
 img:hover{
     margin: 20px;
-    width: 102px;
+    width: 101px;
     border-radius: 50%;
     cursor: pointer;
 }
