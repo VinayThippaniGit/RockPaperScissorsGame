@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(233, 200, 196);
+}
+.container {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width:fit-content;
+    background-color: white;
+    display: inline-block;
+}
+h1{
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+img {
+    margin: 20px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#result {
+    color: rgb(191, 51, 20);
+    text-shadow: 1px 1px .8px black;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.computer {
+    color:black;
+}
+
+.your {
+    color: black;
+}
+
+#finalResult {
+    font-weight: bold;
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:4px;
+    width: 300px;
+    margin: 20px;
+    background-color: coral;
+    text-shadow: 2px 1px 1px white;
+}
+.move{
+    font-size:20px;
+    text-shadow: 1px 1px 0px white;
+}
+.item {
+    display: inline-block;
+}
+#line{
+    border: 2px solid black;
+    border-bottom: 0.1px solid black;
+    border-right: 0.1px solid black;
+    border-left: 0.1px solid black;
+    margin-top: 30px;
+    background-color: rgb(238, 237, 170);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
