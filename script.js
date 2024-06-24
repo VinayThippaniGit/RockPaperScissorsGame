@@ -26,7 +26,7 @@ let wins=0,losses=0,ties=0;
                 result = 'You loose';
                 losses+=1;
             }
-            document.getElementById('result').innerHTML = `<div class="computer">Computers Move : ${computerMove} </div> <div class='your'>Your's Move : ${playerMove} `;
+            document.getElementById('result').innerHTML = ` <div class='your'>Your move : ${playerMove} <div class="computer">Computer move : ${computerMove} </div> `;
             document.getElementById('finalResult').innerHTML = result;
             if (result === 'You Win') {
                 document.getElementById('finalResult').style.color = 'white';
@@ -38,5 +38,5 @@ let wins=0,losses=0,ties=0;
                 document.getElementById('finalResult').style.color = 'white';
                 document.getElementById('finalResult').style.backgroundColor='Orange';
             }
-            document.getElementById('data').innerHTML=`Wins : ${wins} , Looses : ${losses} , Ties : ${ties} <br>No of Games Played : ${wins+losses+ties} times`
+            document.getElementById('data').innerHTML=`Wins : ${wins} , Looses : ${losses} , Ties : ${ties} <br>Number of Games Played : ${wins+losses+ties} times`
         }
