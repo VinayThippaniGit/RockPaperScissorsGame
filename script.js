@@ -1,6 +1,9 @@
 let computerMove = '';
 let wins=0,losses=0,ties=0;
         let result = '';
+        function reset(){
+            location.reload();
+        }
         function game(playerMove) {
             let randomNumber = Math.random();
             if (randomNumber > 0 && randomNumber < 1 / 3) {
